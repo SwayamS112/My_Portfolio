@@ -273,10 +273,11 @@ display: flex;
     color: #ffffff;
     text-align: center;
     padding: 50px 0;  
+    font-size: large;
 }
-
   
 a{ 
+    font-size:x-large;
     color: rgb(255, 255, 255); 
 }
 
@@ -304,16 +305,33 @@ a{
     position: fixed;
     bottom: 60px;
     right: 60px;
-    background-color: #0c1318; 
+    background-color: #021421; 
     color: white;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease;
 }
 
 #resume-link:hover {
     background-color: #0056b3; 
+}
+
+.scroll-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
 }
